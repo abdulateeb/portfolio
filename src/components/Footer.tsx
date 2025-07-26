@@ -1,0 +1,1 @@
+// Footer component removed as per user request

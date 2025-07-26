@@ -1,0 +1,1 @@
+// Header component removed as per user request
