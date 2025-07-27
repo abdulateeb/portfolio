@@ -1,7 +1,6 @@
 import { Trophy, Star } from 'lucide-react';
 import { achievements, languages } from '../utils/constants';
 import { GlowingEffect } from './ui/glowing-effect';
-import { MatrixText } from './ui/matrix-text';
 
 const Achievements = () => {
   return (
@@ -10,13 +9,9 @@ const Achievements = () => {
         {/* Achievements Section */}
         <div className="mb-20">
           <div className="text-center mb-16">
-            <MatrixText 
-              text="Achievements"
-              className="text-4xl md:text-5xl font-bold mb-6"
-              initialDelay={500}
-              letterAnimationDuration={300}
-              letterInterval={80}
-            />
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              Achievements
+            </h2>
           </div>
 
           <div className="space-y-6">
@@ -60,13 +55,9 @@ const Achievements = () => {
         {/* Languages Section */}
         <div>
           <div className="text-center mb-16">
-            <MatrixText 
-              text="Languages"
-              className="text-4xl md:text-5xl font-bold mb-6"
-              initialDelay={500}
-              letterAnimationDuration={300}
-              letterInterval={80}
-            />
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+              Languages
+            </h2>
           </div>
 
           <div className="flex flex-wrap justify-center gap-4">

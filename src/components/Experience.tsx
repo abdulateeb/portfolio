@@ -2,7 +2,6 @@ import { Briefcase, Calendar, Building, ExternalLink } from 'lucide-react';
 import { experience } from '../utils/constants';
 import { GlowingEffect } from './ui/glowing-effect';
 import { SwechaLogo, InfosysLogo, AutonomOpsLogo } from './ui/company-logos';
-import { MatrixText } from './ui/matrix-text';
 
 interface Certificate {
   name: string;
@@ -39,13 +38,9 @@ const Experience = () => {
     <section id="experience" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <MatrixText 
-            text="Experience"
-            className="text-4xl md:text-5xl font-bold mb-6"
-            initialDelay={500}
-            letterAnimationDuration={300}
-            letterInterval={80}
-          />
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            Experience
+          </h2>
         </div>
 
         <div className="space-y-8">

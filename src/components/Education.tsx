@@ -1,20 +1,15 @@
 import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 import { education } from '../utils/constants';
 import { GlowingEffect } from './ui/glowing-effect';
-import { MatrixText } from './ui/matrix-text';
 
 const Education = () => {
   return (
     <section id="education" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <MatrixText 
-            text="Education"
-            className="text-4xl md:text-5xl font-bold mb-6"
-            initialDelay={500}
-            letterAnimationDuration={300}
-            letterInterval={80}
-          />
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            Education
+          </h2>
         </div>
 
         <div className="relative">

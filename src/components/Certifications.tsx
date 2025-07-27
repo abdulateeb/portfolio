@@ -1,19 +1,14 @@
 import { certifications } from '../utils/constants';
 import { AwardBadge } from './ui/award-badge';
-import { MatrixText } from './ui/matrix-text';
 
 const Certifications = () => {
   return (
     <section id="certifications" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <MatrixText 
-            text="Certifications"
-            className="text-4xl md:text-5xl font-bold mb-6"
-            initialDelay={500}
-            letterAnimationDuration={300}
-            letterInterval={80}
-          />
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            Certifications
+          </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -39,7 +34,6 @@ const Certifications = () => {
                   certificateName={cert.name}
                   organization={cert.organization}
                   platform={cert.platform}
-                  date={cert.date}
                 />
               </div>
             );

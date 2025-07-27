@@ -45,20 +45,6 @@ const Hero = () => {
               <Linkedin className="h-7 w-7" />
             </a>
           </div>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-20 animate-fade-in-delay-4">
-            <button
-              className="px-10 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-full font-semibold text-lg hover:from-purple-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border border-white/20"
-            >
-              My Profiles
-            </button>
-            <button
-              className="px-10 py-4 border-2 border-white/30 text-white rounded-full font-semibold text-lg hover:bg-white/10 backdrop-blur-sm transform hover:scale-105 transition-all duration-300"
-            >
-              About Me
-            </button>
-          </div>
         </div>
       </div>
     </section>
