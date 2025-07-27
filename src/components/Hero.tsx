@@ -1,6 +1,6 @@
-import { Github, Linkedin } from 'lucide-react';
 import { personalInfo } from '../utils/constants';
 import { MatrixText } from './ui/matrix-text';
+import { SocialIcons } from './ui/social-icons';
 
 const Hero = () => {
   return (
@@ -27,24 +27,7 @@ const Hero = () => {
           </p>
 
           {/* Social Links */}
-          <div className="flex justify-center space-x-8 mb-16 animate-fade-in-delay-3">
-            <a
-              href={personalInfo.links.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 text-white/80 hover:text-white hover:bg-white/20"
-            >
-              <Github className="h-7 w-7" />
-            </a>
-            <a
-              href={personalInfo.links.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 text-white/80 hover:text-white hover:bg-white/20"
-            >
-              <Linkedin className="h-7 w-7" />
-            </a>
-          </div>
+          <SocialIcons className="mb-16 animate-fade-in-delay-3" />
         </div>
       </div>
     </section>
