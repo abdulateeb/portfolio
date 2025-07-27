@@ -105,12 +105,3 @@ export const certifications = [
 export const achievements = [
   "Secured 1st place in a Hackathon by designing and developing an AI-driven solution, recognized for its scalability, efficiency, and real-world impact by industry experts."
 ];
-
-export const languages = [
-  "English",
-  "Urdu",
-  "Hindi", 
-  "Telugu",
-  "Arabic",
-  "French"
-];

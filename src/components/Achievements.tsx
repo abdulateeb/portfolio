@@ -1,5 +1,5 @@
 import { Trophy, Star } from 'lucide-react';
-import { achievements, languages } from '../utils/constants';
+import { achievements } from '../utils/constants';
 import { GlowingEffect } from './ui/glowing-effect';
 
 const Achievements = () => {
@@ -47,37 +47,6 @@ const Achievements = () => {
                     </p>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Languages Section */}
-        <div>
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-              Languages
-            </h2>
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-4">
-            {languages.map((language, index) => (
-              <div
-                key={index}
-                className="group relative px-6 py-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full hover:bg-white/10 hover:border-white/20 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"
-              >
-                <GlowingEffect
-                  spread={25}
-                  glow={true}
-                  disabled={false}
-                  proximity={32}
-                  inactiveZone={0.05}
-                  borderWidth={1.5}
-                  movementDuration={1.2}
-                />
-                <span className="relative z-10 text-white/90 font-medium group-hover:text-blue-400 transition-colors duration-300">
-                  {language}
-                </span>
               </div>
             ))}
           </div>
