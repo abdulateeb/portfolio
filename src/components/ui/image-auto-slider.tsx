@@ -7,6 +7,8 @@ export const Component = () => {
     "/image2.jpg", 
     "/image4.jpg",
     "/image5.jpg",
+    "/image8.jpg",
+    "/image9.jpg",
     "/image6.jpg",
     "/image7.jpg"
   ];
