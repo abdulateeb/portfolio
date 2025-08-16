@@ -15,28 +15,27 @@ const Education = () => {
           {education.map((edu, index) => (
             <div
               key={index}
-              className="relative rounded-2xl border border-white/10 bg-white/5 p-6 md:p-8 shadow-sm hover:shadow-md hover:bg-white/10 hover:border-white/20 transition-all duration-300"
+              className="group relative bg-white/5 backdrop-blur-sm border border-white/20 rounded-xl p-6 md:p-8 hover:bg-white/10 transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:border-white/30 overflow-hidden"
             >
               <GlowingEffect
-                spread={40}
+                spread={34}
                 glow={true}
                 disabled={false}
-                proximity={56}
-                inactiveZone={0.05}
-                borderWidth={2}
+                proximity={72}
+                inactiveZone={0.06}
+                borderWidth={3}
+                movementDuration={2}
               />
               <div className="relative z-10">
-              {/* Year badge */}
-              <div className="absolute top-4 right-4">
-                <div className="rounded-lg bg-white/10 text-white/90 text-sm px-3 py-1 backdrop-blur-sm">
+              {/* Title + Year aligned */}
+              <div className="mb-1 md:mb-2 flex items-start justify-between gap-3">
+                <h3 className="text-lg md:text-2xl font-bold text-white">
+                  {edu.degree}
+                </h3>
+                <span className="shrink-0 rounded-lg bg-white/10 text-white/90 text-xs sm:text-sm px-2.5 py-0.5 sm:px-3 sm:py-1 backdrop-blur-sm">
                   {edu.year}
-                </div>
+                </span>
               </div>
-
-              {/* Title */}
-              <h3 className="text-xl md:text-2xl font-bold text-white mb-2">
-                {edu.degree}
-              </h3>
 
               {/* Subline */}
               <p className="text-white/80 text-sm md:text-base">
@@ -47,7 +46,7 @@ const Education = () => {
               </p>
 
               {/* Divider */}
-              <div className="my-4 h-px w-full bg-white/10" />
+              <div className="my-3 md:my-4 h-px w-full bg-white/10" />
 
               {/* Description (optional) */}
               {Boolean((edu as any).description) && (
