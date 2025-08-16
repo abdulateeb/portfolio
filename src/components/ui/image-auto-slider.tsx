@@ -58,7 +58,7 @@ export const Component = () => {
           filter: brightness(1.1);
         }
       `}</style>
-      
+
       <div className="w-full h-52 md:h-60 lg:h-64 xl:h-68 relative overflow-hidden flex items-center justify-center">
         {/* Scrolling images container */}
         <div className="relative z-10 w-full flex items-center justify-center py-6">
