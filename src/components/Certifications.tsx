@@ -1,14 +1,14 @@
 import { certifications } from '../utils/constants';
 import { AwardBadge } from './ui/award-badge';
+import { Award } from 'lucide-react';
 
 const Certifications = () => {
   return (
     <section id="certifications" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
-            Certifications
-          </h2>
+        <div className="mb-12 flex items-center gap-3">
+          <Award className="h-7 w-7 text-white" />
+          <h2 className="text-3xl md:text-4xl font-bold text-white">Certifications</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -21,7 +21,7 @@ export const education = [
     degree: "Intermediate",
     institution: "Sri Chaitanya School of Education",
     location: "Board of Intermediate Education AP",
-    year: "2021",
+  year: "2020-2021",
   },
   {
     degree: "10th Class",
